@@ -3,5 +3,6 @@
   "version": "1.0.0",
   "description": "API to store contacts",
   "main": "src/index.js",
+  "author": "Marcos Júnior",
   "license": "MIT"
 }
