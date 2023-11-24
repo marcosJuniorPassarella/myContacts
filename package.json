@@ -5,7 +5,11 @@
   "main": "src/index.js",
   "author": "Marcos Júnior",
   "license": "MIT",
+  "scripts": {},
   "dependencies": {
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
