@@ -1,0 +1,11 @@
+{
+  "name": "myContacts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/marcosJuniorPassarella/myContacts.git",
+  "author": "Marcos Júnior Passarella Naves",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  }
+}
