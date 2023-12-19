@@ -25,7 +25,6 @@ class CategoriesRepository {
     return row;
   }
 
-  // CONTINUAR IMPLEMENTAÇÃO SOZINHO DOS MÉTODOS RESTANTES
   async update(id, { name }) {
     const [row] = await db.query(
       `
@@ -37,6 +36,13 @@ class CategoriesRepository {
       [name, id]
     );
     return row;
+  }
+
+  async delete(id) {
+    const deleteOp = await db.query(`DELETE FROM categories WHERE id = $1`, [
+      id,
+    ]);
+    return deleteOp;
   }
 }
 

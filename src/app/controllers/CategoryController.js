@@ -45,6 +45,12 @@ class CategoryController {
     const contact = await CategoriesRepository.update(id, { name });
     response.json(contact);
   }
+
+  async delete(request, response) {
+    const { id } = request.params;
+    await CategoriesRepository.delete(id);
+    response.sendStatus(204);
+  }
 }
 
 module.exports = new CategoryController();
