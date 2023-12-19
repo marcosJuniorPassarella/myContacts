@@ -24,6 +24,20 @@ class CategoriesRepository {
     );
     return row;
   }
+
+  // CONTINUAR IMPLEMENTAÇÃO SOZINHO DOS MÉTODOS RESTANTES
+  async update(id, { name }) {
+    const [row] = await db.query(
+      `
+    UPDATE categories
+    SET name = $1
+    WHERE ID = $2
+    RETURNING *
+    `,
+      [name, id]
+    );
+    return row;
+  }
 }
 
 module.exports = new CategoriesRepository();
