@@ -1,4 +1,4 @@
-require("express-async-errors");
+require("express-async-errors"); // Possibilita tratar erros de métodos async
 const express = require("express");
 const routes = require("./routes");
 
